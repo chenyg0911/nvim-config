@@ -4,6 +4,9 @@ return {
   'akinsho/toggleterm.nvim',
   version = '*', -- Terminal
   cmd = { 'ToggleTerm' },
+  keys = {
+    { "<leader>tt", "<cmd>ToggleTerm<cr>", desc = "ToggleTerm" },
+  },
   config = function()
     require('toggleterm').setup({
       size = function(term)
@@ -22,6 +25,7 @@ return {
     end
 
     vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
+    
   end
 
 }
