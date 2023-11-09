@@ -5,6 +5,11 @@ return {
     "neovim/nvim-lspconfig",
     "nvim-treesitter/nvim-treesitter",
   },
+ keys = {
+    { "<leader>gd", "<cmd>GoDoc<cr>", desc = "GoDoc" },
+    { "<leader>gi", "<cmd>GoImport<cr>", desc = "GoImport" },
+  },
+ 
   config = function()
     require("go").setup()
   end,
