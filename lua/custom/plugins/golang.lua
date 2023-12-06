@@ -6,8 +6,8 @@ return {
     "nvim-treesitter/nvim-treesitter",
   },
  keys = {
-    { "<leader>gd", "<cmd>GoDoc<cr>", desc = "GoDoc" },
-    { "<leader>gi", "<cmd>GoImport<cr>", desc = "GoImport" },
+    -- { "<leader>gd", "<cmd>GoDoc<cr>", desc = "GoDoc" },
+    { "<leader>gf", "<cmd>GoFmt<cr>", desc = "Go Formater" },
   },
  
   config = function()
