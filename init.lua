@@ -111,7 +111,8 @@ require('lazy').setup({
       'rafamadriz/friendly-snippets',
     },
   },
-
+  -- nvim-nio
+  { "nvim-neotest/nvim-nio" },
   -- Useful plugin to show you pending keybinds.
   { 'folke/which-key.nvim',  opts = {} },
   {
